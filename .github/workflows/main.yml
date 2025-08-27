@@ -2,7 +2,7 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]  # 改为允许部署的分支，通常是main
   workflow_dispatch:
 
 permissions:
@@ -26,8 +26,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8.6.12
-          cache: true
+          version: 8.6.12  # 移除了不支持的cache参数
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,6 +34,15 @@ jobs:
           node-version: 18
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
+
+      # 添加专门的pnpm缓存步骤
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -50,7 +58,7 @@ jobs:
           touch .vitepress/dist/.nojekyll
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # 升级到v3版本
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
@@ -64,5 +72,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # 同时升级部署动作到v4
+        uses: actions/deploy-pages@v4
     
