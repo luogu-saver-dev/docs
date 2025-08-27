@@ -2,7 +2,7 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches: [main]  # 改为允许部署的分支，通常是main
+    branches: [v1]
   workflow_dispatch:
 
 permissions:
