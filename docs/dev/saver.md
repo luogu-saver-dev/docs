@@ -57,7 +57,7 @@
 ## 开始开发
 ### Clone 仓库
 ```bash
-git clone https://www.github.com/luogo-saver-dev/luogu-saver.git
+git clone https://github.com/luogu-saver-dev/luogu-saver.git
 cd luogu-saver
 ```
 ### 安装依赖
