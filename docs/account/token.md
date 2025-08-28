@@ -3,7 +3,7 @@
 token 是您在洛谷保存站的唯一识别凭据，保护您的账户安全。
 
 ## 如何申请 token
-请前往 https://dev.luogu.me/token/apply ，输入您的洛谷 UID，和用于验证的剪切板 ID。
+请前往 https://www.luogu.me/token/apply ，输入您的洛谷 UID，和用于验证的剪切板 ID。
 
 ## 注意事项：
 - 需要提供有效的剪贴板 ID 作为身份验证，剪贴板内容应为 `lgs_register_verification`。请一定不要泄露您的验证剪切板 ID，最好是在申请 token 后删除。
