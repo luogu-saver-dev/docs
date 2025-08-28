@@ -5,7 +5,7 @@ export default defineConfig({
   title: "帮助中心-洛谷保存站",
   head: [["link", { rel: "icon", href: "https://luogu.com.cn/favicon.ico" }]],
   description: "洛谷保存站帮助中心",
-  base: "/docs/",
+  //base: "/docs/",
    ignoreDeadLinks: true,
   themeConfig: {
     outlineTitle: "目录",
