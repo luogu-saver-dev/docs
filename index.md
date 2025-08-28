@@ -7,7 +7,7 @@ hero:
   text: ""
   tagline: Powered by VitePress
   image:
-      src: /public/homePage.svg
+      src: https://tc.z.wiki/autoupload/f/-L5avoIWVTc8baQaL0soPbKPUV3bq0pPpk9eCbAMfSqyl5f0KlZfm6UsKj-HyTuv/20250828/TVFI/undraw_book-lover_m9n3.svg?id=818967
       alt: 背景图片
   actions:
     - theme: brand
