@@ -7,4 +7,4 @@
 
 如果想要申请广告位，请阅读下面的章节；
 
-如果是日常使用上的疑问，请在[QQ群](https://qm.qq.com/q/QVM9YFEb26)内提问。
+如果是日常使用上的疑问，请在 [QQ 群](https://qm.qq.com/q/QVM9YFEb26) 内提问。
