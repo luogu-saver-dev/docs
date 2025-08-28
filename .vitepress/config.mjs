@@ -12,7 +12,7 @@ export default defineConfig({
     outline: [2,6],
     nav: [
       { text: '首页', link: '/' },
-      { text: '保存站', link: 'https://dev.luogu.me' }
+      { text: '保存站', link: 'https://www.luogu.me' }
     ],
        // 设置搜索框的样式
     search: {
