@@ -15,13 +15,13 @@ hero:
       link: /docs/home
     - theme: brand
       text: 洛谷保存站
-      link: https://dev.luogu.me
+      link: https://www.luogu.me
     - theme: alt
       text: 贡献指南
-      link: https://example.com
+      link: /docs/dev/saver
     - theme: alt
       text: 旧前端
-      link: https://luogu.me
+      link: https://old.luogu.me
 
 features:
   - title: 操作简便，开箱即用
