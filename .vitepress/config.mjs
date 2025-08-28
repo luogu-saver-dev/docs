@@ -75,6 +75,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/luogu-saver-dev/luogu-saver' }
-    ]
+    ],
+    footer: {
+      message: 'I AK IOI',
+      copyright: 'Copyright © 2025-Luogu-Saver'
+    }
   }
 })
