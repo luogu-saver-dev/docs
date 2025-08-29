@@ -7,7 +7,7 @@ export default defineConfig({
   description: "洛谷保存站帮助中心",
   // base: "/docs/", // 若需要部署到子路径可取消注释，当前注释不影响
   ignoreDeadLinks: true,
-
+  lastUpdated: true,
   // 顶层 themeConfig（所有主题相关配置都在这里面）
   themeConfig: {
     outlineTitle: "目录",
