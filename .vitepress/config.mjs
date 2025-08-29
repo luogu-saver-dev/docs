@@ -5,16 +5,19 @@ export default defineConfig({
   title: "帮助中心-洛谷保存站",
   head: [["link", { rel: "icon", href: "https://luogu.com.cn/favicon.ico" }]],
   description: "洛谷保存站帮助中心",
-  //base: "/docs/",
-   ignoreDeadLinks: true,
+  // base: "/docs/", // 若需要部署到子路径可取消注释，当前注释不影响
+  ignoreDeadLinks: true,
+
+  // 顶层 themeConfig（所有主题相关配置都在这里面）
   themeConfig: {
     outlineTitle: "目录",
-    outline: [2,6],
+    outline: [2, 6], // 正确：outline 接受 [minLevel, maxLevel]，2~6级标题符合规范
     nav: [
       { text: '首页', link: '/' },
       { text: '保存站', link: 'https://www.luogu.me' }
     ],
-       // 设置搜索框的样式
+
+    // 搜索配置（正确嵌套在 themeConfig 内）
     search: {
       provider: "local",
       options: {
@@ -34,21 +37,20 @@ export default defineConfig({
         },
       },
     },
-    export default {
-  themeConfig: {
+
     editLink: {
       pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/docs/:path',
       text: '在 Github 上编辑此页面'
-    }
-  }
-}
+    },
+
+    // 侧边栏配置（正确放在 themeConfig 内，与其他键同级）
     sidebar: [
       {
         text: '起步',
         items: [
           { text: '欢迎', link: '/docs/home' },
-          { text: '从源代码构建', link: '/docs/start/build'},
-          { text: '广告位申请', link: '/docs/start/ad'}
+          { text: '从源代码构建', link: '/docs/start/build' },
+          { text: '广告位申请', link: '/docs/start/ad' }
         ]
       },
       {
@@ -60,9 +62,9 @@ export default defineConfig({
       {
         text: '开发者',
         items: [
-          {text: '针对洛谷保存站的贡献指南', link: '/docs/dev/saver'},
-          {text: '针对本文档的贡献指南', link: '/docs/dev/docs'},
-          {text: 'AIGC公约', link: '/docs/dev/aigc'}
+          { text: '针对洛谷保存站的贡献指南', link: '/docs/dev/saver' },
+          { text: '针对本文档的贡献指南', link: '/docs/dev/docs' },
+          { text: 'AIGC公约', link: '/docs/dev/aigc' }
         ]
       },
       {
@@ -79,11 +81,14 @@ export default defineConfig({
           { text: '更新日志', link: '/docs/update' }
         ]
       }
-    ],  
+    ],
 
+    // 社交链接配置
     socialLinks: [
       { icon: 'github', link: 'https://github.com/luogu-saver-dev/luogu-saver' }
     ],
+
+    // 页脚配置
     footer: {
       message: 'I AK IOI',
       copyright: 'Copyright © 2025-Luogu-Saver'
