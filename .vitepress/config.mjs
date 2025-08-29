@@ -34,6 +34,13 @@ export default defineConfig({
         },
       },
     },
+    export default {
+  themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/docs/:path'
+    }
+  }
+}
     sidebar: [
       {
         text: '起步',
