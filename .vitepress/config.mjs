@@ -39,7 +39,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/docs/:path',
+      pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/:path',
       text: '在 Github 上编辑此页面'
     },
 
