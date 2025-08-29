@@ -37,7 +37,8 @@ export default defineConfig({
     export default {
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/docs/:path'
+      pattern: 'https://github.com/luogu-saver-dev/docs/edit/v1/docs/:path',
+      text: '在 Github 上编辑此页面'
     }
   }
 }
