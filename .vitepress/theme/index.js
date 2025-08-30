@@ -1,22 +1,18 @@
-// https://vitepress.dev/guide/custom-theme
+// 导入必要的依赖
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-// 导入自定义的全局布局组件（关键缺失步骤）
+// 导入自定义的全局布局（路径需与实际文件位置一致）
 import GlobalLayout from './layouts/GlobalLayout.vue'
 
 /** @type {import('vitepress').Theme} */
 export default {
+  // 继承默认主题的所有功能
   extends: DefaultTheme,
-  // 使用导入的GlobalLayout作为布局组件
+  // 使用自定义布局替换默认布局
   Layout: GlobalLayout,
-  // 如果你需要通过插槽
-  // Layout: () => {
-  //   return h(DefaultTheme.Layout, null, {
-  //     // 这里可以添加插槽内容，如之前的评论区配置
-  //   })
-  // },
+  // 扩展应用（如需注册全局组件可在此添加）
   enhanceApp({ app, router, siteData }) {
-    // 可以在这里注册全局组件或添加其他配置
+    // 示例：app.component('ComponentName', Component)
   }
 }
