@@ -3,7 +3,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 // 导入自定义的全局布局（路径需与实际文件位置一致）
-import GlobalLayout from './layouts/GlobalLayout.vue'
+import GlobalLayout from './GlobalLayout.vue'
 
 /** @type {import('vitepress').Theme} */
 export default {
